@@ -1,0 +1,82 @@
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+}
+
+.logo {
+    width: 100px;
+    height: 28px;
+    background: url("../../../imagenes/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.icon__buscar {
+    width: 17.5px;
+    height: 17.5px;
+    background: url("../../../imagenes/buscador.png");
+}
+
+.btn__login {
+    color: #2A7AE4;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid #2A7AE4;
+    width: 133px;
+    height: 40px;
+    background: none;
+}
+
+.buscador {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+
+    .logo__buscar {
+        display: flex;
+        align-items: center;
+    }
+
+    .buscador {
+        display: block;
+
+    }
+
+    .buscar {
+        display: flex;
+        margin: 0 1rem;
+        width: 272px;
+        height: 40px;
+        background: #F5F5F5;
+        border-radius: 20px;
+        border: 0.2px;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 1rem;
+    }
+
+    .icon__buscar.tel {
+        display: none;
+    }
+
+    .search {
+        margin: 0 0.5rem;
+        background: none;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #A2A2A2;
+        width: 270px;
+        height: 40px;
+    }
+
+
+}

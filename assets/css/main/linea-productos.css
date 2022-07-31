@@ -1,0 +1,86 @@
+.linea__encabezado {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linea__link {
+    display: flex;
+    align-items: center;
+}
+
+.link__icon {
+    width: 10.67px;
+    height: 10.67px;
+    background: url("../../../imagenes/arrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.linea__titulo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+}
+
+.link__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A7AE4;
+    margin-right: 0.5em;
+}
+
+.linea__lista {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.linea__item {
+    width: 170px;
+    height: auto;
+    margin: 0.5rem;
+
+}
+
+.item__nombre {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    margin-top: .5em;
+}
+
+.item__precio {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin-top: .5em;
+}
+
+.item__ver {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A7AE4;
+    margin-top: .5em;
+}
+
+.ocultar {
+    display: none;
+}
+
+@media screen and (min-width:678px){
+    .linea__lista{
+        margin: 0.7rem;
+    }   
+}
