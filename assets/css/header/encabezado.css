@@ -80,3 +80,9 @@
 
 
 }
+
+@media screen and (min-width:1120px) {
+    .buscar{
+        width: 393px;
+    }
+}

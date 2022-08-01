@@ -94,3 +94,17 @@
         line-height: 19px;
     }
 }
+
+@media screen and (min-width:1120px) {
+    .ver__mas{
+        display: block;
+    }
+
+    .linea__lista{
+        margin: 0 2rem;
+    }
+
+    .linea__item{
+        margin: 1rem;
+    }
+}
