@@ -6,3 +6,10 @@
     color:#464646;
     margin-bottom: 1rem;
 }
+
+@media screen and (min-width:768px) {
+    .footer{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+}

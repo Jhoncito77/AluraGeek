@@ -76,3 +76,24 @@
     line-height: 16px;
     border: #464646;
 }
+
+@media screen and (min-width:768px) {
+    .contacto{
+        display: flex;
+        height: auto;
+        padding-top: 2rem;
+    }
+
+    .logo.cont-logo{
+        margin-top: 0.5rem;
+        margin-left: 0;
+        padding-left: 2rem;
+    }
+
+    .contacto__links{
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+
+    
+}
