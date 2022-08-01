@@ -18,14 +18,28 @@
     margin-bottom: 2rem;
 }
 
+
+
 @media screen and (min-width:768px) {
     #email,#password{
         width: 275px;
+    }
+
+    .encabezado{
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 2rem;
     }
 }
 
 @media screen and (min-width:1120px) {
     #email,#password,#btn-entrar{
         width: 423px;
+    }
+
+    .encabezado{
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 4rem;
     }
 }
