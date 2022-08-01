@@ -1,0 +1,31 @@
+.main {
+    background: #E5E5E5;
+    
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 4rem;
+    align-items: center;
+}
+
+.titulo__login {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:768px) {
+    #email,#password{
+        width: 275px;
+    }
+}
+
+@media screen and (min-width:1120px) {
+    #email,#password,#btn-entrar{
+        width: 423px;
+    }
+}

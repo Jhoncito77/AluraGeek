@@ -41,6 +41,7 @@
     background: #FFFFFF;
     border-radius: 5px;
     border: #464646;
+    opacity: 60%;
 }
 
 .input.mensaje {
