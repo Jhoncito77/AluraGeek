@@ -1,0 +1,11 @@
+@media screen and (min-width:1120px) {
+    .linea__productos{
+        width: 1212px;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .linea__lista{
+        margin: 0;
+    }
+}
