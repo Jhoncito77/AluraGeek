@@ -1,0 +1,146 @@
+.img__producto {
+    background: url("../../imagenes/sw-1.png");
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.datos__producto {
+    margin: 0 2rem;
+}
+
+.titulo__producto {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    margin: 2rem 0 1rem 0;
+}
+
+.precio__producto {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin-bottom: 1rem;
+}
+
+.descripcion__producto {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+.productos__similares {
+    margin: 4rem 1rem 1rem 1rem;
+}
+
+.otros_productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.otro__producto {
+    width: 156px;
+    margin: 1rem 0 1rem 0;
+}
+
+.titulo__otro-producto {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+}
+
+.precio__otro-producto {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.link__producto {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2A7AE4;
+}
+
+.contacto__formulario {
+    margin: 1rem;
+}
+
+@media screen and (min-width:768px) {
+    .producto {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .datos__producto {
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    .titulo__producto {
+        margin: 0;
+    }
+
+    #mensaje {
+        width: calc(100% - 1rem);
+    }
+}
+
+@media screen and (min-width:1120px) {
+
+    .producto,
+    .productos__similares {
+        margin: 4rem 7rem;
+        padding: 0;
+    }
+
+    .img__producto {
+        width: 560px;
+        height: 403px;
+    }
+
+    .producto {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+
+    .datos__producto {
+        width: 560px;
+    }
+
+    .titulo__producto {
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 61px;
+    }
+
+    .precio__producto {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .descripcion__producto {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .otro__producto{
+        width: 176px;
+    }
+
+    .ocultar{
+        display: block;
+    }
+}
