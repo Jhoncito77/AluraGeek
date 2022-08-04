@@ -18,7 +18,9 @@
     margin-bottom: 2rem;
 }
 
-
+.contacto__formulario{
+    margin: 1rem;
+}
 
 @media screen and (min-width:768px) {
     #email,#password{
@@ -29,6 +31,10 @@
         align-items: flex-start;
         justify-content: flex-start;
         padding-left: 2rem;
+    }
+
+    #mensaje{
+        width: calc(100% - 1rem);
     }
 }
 

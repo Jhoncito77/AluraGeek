@@ -82,6 +82,7 @@
         display: flex;
         height: auto;
         padding-top: 2rem;
+        justify-content: center;
     }
 
     .logo.cont-logo{
@@ -93,6 +94,10 @@
     .contacto__links{
         align-items: flex-start;
         padding-left: 2rem;
+    }
+
+    .contacto__link{
+        margin-bottom: 1.5rem;
     }
 
     
