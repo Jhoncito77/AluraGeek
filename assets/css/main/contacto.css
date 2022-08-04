@@ -22,9 +22,7 @@
     margin-bottom: 1rem;
 }
 
-.contacto__formulario {
-    margin: 1rem;
-}
+
 
 .contacto__formulario-titulo {
     font-weight: 700;
@@ -46,7 +44,8 @@
 
 .input.mensaje {
     height: 100px;
-    margin-bottom: 0;
+    padding: 0.3rem 0 0 0.5rem;
+    width: calc(340px - 0.5rem);
 }
 
 .input::placeholder{
@@ -62,7 +61,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #464646;
-    padding-top: 0;
+    padding: 0.2 rem 0 0 0.3rem;
 }
 
 .btn-enviar {

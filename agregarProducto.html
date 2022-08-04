@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar producto || AluraGeek</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/body.css">
+    <link rel="stylesheet" href="./assets/css/header/encabezado.css">
+    <link rel="stylesheet" href="./assets/css/login/login.css">
+    <link rel="stylesheet" href="./assets/css/main/contacto.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    <link rel="stylesheet" href="./assets/css/admin/btn-menu-admin.css">
+</head>
+<body>
+    <header class="header">
+        <section class="encabezado">
+            <div class="logo__buscar">
+                <div class="logo"></div>
+                <div class="buscador">
+                    <div class="buscar">
+                        <input type="search" name="search" id="" placeholder="¿Que deseas buscar?" class="search">
+                        <div class="icon__buscar"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn__login btn__admin">Menu Administrador</button>
+            <div class="icon__buscar tel"></div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="add__producto">
+            <p class="titulo__admin">Agregar nuevo producto</p>
+            <div class="content__input">
+                <p class="placeholder__input">Url de la imagen</p>
+                <input type="text" name="urlImagen" id="" class="input__new" >
+            </div>
+            <div class="content__input">
+                <p class="placeholder__input">Categoria</p>
+                <input type="text" name="categoria" id="" class="input__new" >
+            </div>
+            <div class="content__input">
+                <p class="placeholder__input">Nombre del producto</p>
+                <input type="text" name="nombre" id="" class="input__new" >
+            </div>
+            <div class="content__input">
+                <p class="placeholder__input">Precio del producto</p>
+                <input type="text" name="precio" id="" class="input__new" >
+            </div>
+            <div class="content__input">
+                <p class="placeholder__input">Descripcion del producto</p>
+                <input type="text" name="descripcion" id="" class="input__new" >
+            </div>
+            
+            <button type="button" class="btn-enviar addProducto">Agregar producto</button>
+        </section>
+
+        <section class="contacto">
+            <div class="contacto__cont">
+                <div class="logo cont-logo"></div>
+                <div class="contacto__links">
+                    <a href="#" class="contacto__link">Quienes somos</a>
+                    <a href="#" class="contacto__link">Politica de privacidad</a>
+                    <a href="#" class="contacto__link">Programa de fidelidad</a>
+                    <a href="#" class="contacto__link">Nuestras tiendas</a>
+                    <a href="#" class="contacto__link">Quiero ser franquiciado</a>
+                    <a href="#" class="contacto__link">Anuncie aqui</a>
+                </div>
+            </div>
+            <div class="contacto__formulario">
+                <p class="contacto__formulario-titulo">Hable con nosotros</p>
+                <div class="content__input" id="nombre_mensaje">
+                    <p class="placeholder__input">Nombre</p>
+                    <input type="text" name="nombre_contacto"  class="input__new" >
+                </div>
+                
+                <textarea name="mensaje" id="" cols="30" rows="10" class="input mensaje" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar mensaje" class="btn-enviar" id="sendMensaje">
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Jhon Jairo Moreno<br>2022 </p>
+    </footer>
+</body>
+</html>
