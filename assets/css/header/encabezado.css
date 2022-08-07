@@ -31,6 +31,12 @@
     width: 133px;
     height: 40px;
     background: none;
+    transition: all 1s ease;
+}
+
+.btn__login:hover{
+    background: #2A7AE4;
+    color: #ffffff;
 }
 
 .buscador {

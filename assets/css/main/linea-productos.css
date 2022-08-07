@@ -96,15 +96,15 @@
 }
 
 @media screen and (min-width:1120px) {
-    .ver__mas{
+    .ver__mas {
         display: block;
     }
 
-    .linea__lista{
+    .linea__lista {
         margin: 0 2rem;
     }
 
-    .linea__item{
+    .linea__item {
         margin: 1rem;
     }
 }
