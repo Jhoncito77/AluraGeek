@@ -8,6 +8,7 @@
     flex-direction: column;
     padding: 6rem 4rem;
     align-items: center;
+    
 }
 
 .titulo__login {
@@ -20,6 +21,18 @@
 
 .contacto__formulario{
     margin: 1rem;
+}
+
+.error__login_display{
+display: none;
+}
+
+.error__login{
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: red;
 }
 
 @media screen and (min-width:768px) {
@@ -48,4 +61,12 @@
         justify-content: flex-start;
         padding-left: 4rem;
     }
+
+    .login{
+        padding: 6rem 0;
+        width: 423px;
+        margin: 0 auto;
+    }
+
+    
 }

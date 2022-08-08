@@ -22,46 +22,12 @@
     margin-bottom: 1rem;
 }
 
-
-
 .contacto__formulario-titulo {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     color: #464646;
     margin-bottom: 0.3rem;
-}
-
-.input {
-    width: 98%;
-    height: 60px;
-    margin-bottom: 1rem;
-    background: #FFFFFF;
-    border-radius: 5px;
-    border: #464646;
-    opacity: 60%;
-}
-
-.input.mensaje {
-    height: 100px;
-    padding: 0.3rem 0 0 0.5rem;
-    width: calc(340px - 0.5rem);
-}
-
-.input::placeholder{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #464646;
-    padding-top: 0;
-}
-
-.input.mensaje::placeholder{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #464646;
-    padding: 0.2 rem 0 0 0.3rem;
 }
 
 .btn-enviar {

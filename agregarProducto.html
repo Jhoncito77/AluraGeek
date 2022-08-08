@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/main/contacto.css">
     <link rel="stylesheet" href="./assets/css/footer/footer.css">
     <link rel="stylesheet" href="./assets/css/admin/btn-menu-admin.css">
+    <link rel="stylesheet" href="./assets/css/input.css">
 </head>
 <body>
     <header class="header">
@@ -26,32 +27,32 @@
                     </div>
                 </div>
             </div>
-            <button class="btn__login btn__admin">Menu Administrador</button>
+            <a href="admin.html"><button class="btn__login btn__admin">Menu Administrador</button></a>
             <div class="icon__buscar tel"></div>
         </section>
     </header>
     <main class="main">
         <section class="add__producto">
             <p class="titulo__admin">Agregar nuevo producto</p>
-            <div class="content__input">
-                <p class="placeholder__input">Url de la imagen</p>
-                <input type="text" name="urlImagen" id="" class="input__new" >
+            <div class="input__content size">
+                <input type="text" name="urlImagen" class="input" placeholder="imagen" required>
+                <label class="input-label" for="urlImagen">Url de la imagen</label>
             </div>
-            <div class="content__input">
-                <p class="placeholder__input">Categoria</p>
-                <input type="text" name="categoria" id="" class="input__new" >
+            <div class="input__content size">
+                <input type="text" name="categoria" class="input" placeholder="Categoria" required>
+                <label class="input-label" for="categoria">Categoria</label>
             </div>
-            <div class="content__input">
-                <p class="placeholder__input">Nombre del producto</p>
-                <input type="text" name="nombre" id="" class="input__new" >
+            <div class="input__content size">
+                <input type="text" name="nombre" class="input" placeholder="Nombre" required>
+                <label class="input-label" for="nombre">Nombre del producto</label>
             </div>
-            <div class="content__input">
-                <p class="placeholder__input">Precio del producto</p>
-                <input type="text" name="precio" id="" class="input__new" >
+            <div class="input__content size">
+                <input type="text" name="precio" class="input" placeholder="Precio" required>
+                <label class="input-label" for="precio">Precio del producto</label>
             </div>
-            <div class="content__input">
-                <p class="placeholder__input">Descripcion del producto</p>
-                <input type="text" name="descripcion" id="" class="input__new" >
+            <div class="input__content size">
+                <input type="text" name="descripcion" class="input" placeholder="Descripcion" required>
+                <label class="input-label" for="descripcion">Descripcion del producto</label>
             </div>
             
             <button type="button" class="btn-enviar addProducto">Agregar producto</button>
@@ -71,13 +72,22 @@
             </div>
             <div class="contacto__formulario">
                 <p class="contacto__formulario-titulo">Hable con nosotros</p>
-                <div class="content__input" id="nombre_mensaje">
-                    <p class="placeholder__input">Nombre</p>
-                    <input type="text" name="nombre_contacto"  class="input__new" >
-                </div>
+                <form action="">
+                    <div class="input__content">
+                        <input type="text" name="nombre_contacto" class="input" placeholder="Nombre" required maxlength="40" data-tipo="nombre">
+                        <label class="input-label" for="nombre_contacto">Nombre</label>
+                        <span class="mensaje__error"></span>
+                    </div>
+                    <div class="input__content">
+                        <textarea name="mensaje" cols="30" rows="10" class="input_textarea" placeholder="Mensaje" required maxlength="120" data-tipo="mensaje"></textarea>
+                        <label class="input-label" for="mensaje">Mensaje</label>
+                        <span class="mensaje__error"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar" id="sendMensaje">Enviar mensaje</button>
+                    
+                </form>
                 
-                <textarea name="mensaje" id="" cols="30" rows="10" class="input mensaje" placeholder="Mensaje"></textarea>
-                <input type="submit" value="Enviar mensaje" class="btn-enviar" id="sendMensaje">
             </div>
         </section>
 
@@ -85,5 +95,7 @@
     <footer class="footer">
         <p>Desarrollado por Jhon Jairo Moreno<br>2022 </p>
     </footer>
+
+    <script type="module" src="./assets/js/app.js"></script>
 </body>
 </html>

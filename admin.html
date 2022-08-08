@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/footer/footer.css">
     <link rel="stylesheet" href="./assets/css/login/login.css">
     <link rel="stylesheet" href="./assets/css/admin/vista-admin.css">
+    <link rel="stylesheet" href="./assets/css/input.css">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
             <div class="linea__encabezado">
                 <h2 class="linea__titulo">Todos los productos</h2>
                 <div class="linea__link sws">
-                    <button type="button" class="btn-enviar">Agregar Producto</button>
+                    <a href="agregarProducto.html"><button type="button" class="btn-enviar">Agregar Producto</button></a>
                 </div>
             </div>
             <ul class="linea__lista">
@@ -181,10 +182,17 @@
             </div>
             <div class="contacto__formulario">
                 <p class="contacto__formulario-titulo">Hable con nosotros</p>
-                <input type="text" class="input" name="nombre" id="" placeholder="Nombre">
-                <textarea name="mensaje" id="" cols="30" rows="10" class="input mensaje"
-                    placeholder="Mensaje"></textarea>
-                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+                <div class="input__content">
+                    <input type="text" name="nombre_contacto" class="input" placeholder="Nombre" required required maxlength="40">
+                    <label class="input-label" for="nombre_contacto">Nombre</label>
+                </div>
+                <div class="input__content">
+                    <textarea name="mensaje" cols="30" rows="10" class="input_textarea" placeholder="Mensaje" required maxlength="120"></textarea>
+                    <label class="input-label" for="mensaje">Mensaje</label>
+                </div>
+                
+                
+                <input type="submit" value="Enviar mensaje" class="btn-enviar" id="sendMensaje">
             </div>
         </section>
 

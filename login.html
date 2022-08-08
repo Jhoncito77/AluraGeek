@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/css/login/login.css">
     <link rel="stylesheet" href="./assets/css/main/contacto.css">
     <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    <link rel="stylesheet" href="./assets/css/admin/btn-menu-admin.css">
+    <link rel="stylesheet" href="./assets/css/input.css">
 </head>
 <body>
     <header class="header">
@@ -30,11 +32,27 @@
         </section>
     </header>
     <main class="main">
+        
         <section class="login">
             <p class="titulo__login">Iniciar Sesión</p>
-            <input class="input" type="email" name="email" id="email" placeholder="Escriba su correo electronico">
-            <input class="input" type="password" name="password" id="password" placeholder="Escriba su contraseña">
-            <input type="submit" value="Entrar" class="btn-enviar" id="btn-entrar">
+            <form action="./admin.html" class="form">
+                <div class="input__content">
+                    <input class="input" type="email" name="email" id="email" placeholder="Escriba su correo electronico" required data-tipo="email">
+                    <label class="input-label" for="email">Email</label>
+                    <span class="mensaje__error"></span>
+                </div>
+                <div class="input__content">
+                    <input class="input" type="password" name="password" id="password" placeholder="Escriba su contraseña" required data-tipo="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <label class="input-label" for="password">Contraseña</label>
+                    <p class="mensaje__error"></p>
+                </div>
+                
+                    <button type="submit" class="btn-enviar" id="btn-entrar" data-btn="login">Entrar</button>
+                    <p class="error__login error__login_display" data-error>Usuario y/o contraseña incorrecta.</p>
+                
+                
+            </form>
+            
         </section>
 
         <section class="contacto">
@@ -51,9 +69,22 @@
             </div>
             <div class="contacto__formulario">
                 <p class="contacto__formulario-titulo">Hable con nosotros</p>
-                <input type="text" class="input"name="nombre" id="" placeholder="Nombre">
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="input mensaje" placeholder="Mensaje"></textarea>
-                <input type="submit" value="Enviar mensaje" class="btn-enviar">
+                <form action="">
+                    <div class="input__content">
+                        <input type="text" name="nombre_contacto" class="input" placeholder="Nombre" required maxlength="40" data-tipo="nombre">
+                        <label class="input-label" for="nombre_contacto">Nombre</label>
+                        <span class="mensaje__error"></span>
+                    </div>
+                    <div class="input__content">
+                        <textarea name="mensaje" cols="30" rows="10" class="input_textarea" placeholder="Mensaje" required maxlength="120" data-tipo="mensaje"></textarea>
+                        <label class="input-label" for="mensaje">Mensaje</label>
+                        <span class="mensaje__error"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar" id="sendMensaje">Enviar mensaje</button>
+                    
+                </form>
+                
             </div>
         </section>
 
@@ -61,5 +92,7 @@
     <footer class="footer">
         <p>Desarrollado por Jhon Jairo Moreno<br>2022 </p>
     </footer>
+
+    <script type="module" src="./assets/js/app.js"></script>
 </body>
 </html>
