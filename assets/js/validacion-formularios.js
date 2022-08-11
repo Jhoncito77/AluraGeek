@@ -5,7 +5,7 @@ export function validar(input) {
         validadores[tipoInput](input);
     }
 
-
+    console.log(input.validity)
     if (input.validity.valid) {
         input.parentElement.classList.remove("content__error");
         input.parentElement.querySelector(".mensaje__error").innerHTML = "";
@@ -25,6 +25,7 @@ const mensajesError = {
     nombre: {
         valueMissing: "Este campo no puede estar vacio",
         customError: "El nombre no puede estar vacio",
+        tooShort: "El nombre debe contener minimo 4 letras",
     },
     mensaje: {
         valueMissing: "Este campo no puede estar vacio",
@@ -37,6 +38,20 @@ const mensajesError = {
     password: {
         valueMissing: "Este campo no puede estar vacio",
         patternMismatch: "La contraseña debe contener al menos 8 caracteres, una letra mayuscula, una minuscula y un numero."
+    },
+    imagen: {
+        valueMissing: "Este campo no puede estar vacio",
+    },
+    categoria: {
+        valueMissing: "Este campo no puede estar vacio",
+    },
+    precio: {
+        valueMissing: "Este campo no puede estar vacio",
+        patternMismatch: "Ingrese unicamente numeros",
+    },
+    descripcion: {
+        valueMissing: "Este campo no puede estar vacio",
+        tooShort: "La descripcion debe contener minimo 4 letras",
     }
 }
 
@@ -45,6 +60,7 @@ const tipoDeErrores = [
     "typeMismatch",
     "patternMismatch",
     "customError",
+    "tooShort",
 ];
 
 function mostrarMensajeDeError(tipoInput, input) {

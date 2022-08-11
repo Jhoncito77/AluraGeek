@@ -34,28 +34,46 @@
     <main class="main">
         <section class="add__producto">
             <p class="titulo__admin">Agregar nuevo producto</p>
-            <div class="input__content size">
-                <input type="text" name="urlImagen" class="input" placeholder="imagen" required>
-                <label class="input-label" for="urlImagen">Url de la imagen</label>
-            </div>
-            <div class="input__content size">
-                <input type="text" name="categoria" class="input" placeholder="Categoria" required>
-                <label class="input-label" for="categoria">Categoria</label>
-            </div>
-            <div class="input__content size">
-                <input type="text" name="nombre" class="input" placeholder="Nombre" required>
-                <label class="input-label" for="nombre">Nombre del producto</label>
-            </div>
-            <div class="input__content size">
-                <input type="text" name="precio" class="input" placeholder="Precio" required>
-                <label class="input-label" for="precio">Precio del producto</label>
-            </div>
-            <div class="input__content size">
-                <input type="text" name="descripcion" class="input" placeholder="Descripcion" required>
-                <label class="input-label" for="descripcion">Descripcion del producto</label>
-            </div>
+            <form action="">
+                <div class="input__content size">
+                    <input type="text" name="urlImagen" class="input" placeholder="imagen" required data-tipo="imagen">
+                    
+                    <label class="input-label" for="urlImagen">Url de la imagen</label>
+                    <span class="mensaje__error"></span>
+                    
+                    <div class="cargar_imagen">
+                        <a class="link_carga">
+                            <div class="icon__carga"></div>
+                            
+                        </a>
+                        <input type="file" name="cargar_img" class="input_img" accept="image/*" data-cargarImagen>
+                    </div>
+                    
+                </div>
+                <div class="input__content size">
+                    <input type="text" name="categoria" class="input" placeholder="Categoria" required data-tipo="categoria">
+                    <label class="input-label" for="categoria">Categoria</label>
+                    <span class="mensaje__error"></span>
+                </div>
+                <div class="input__content size">
+                    <input type="text" name="nombre" class="input" placeholder="Nombre" required data-tipo="nombre"  minlength="4" maxlength="20">
+                    <label class="input-label" for="nombre">Nombre del producto</label>
+                    <span class="mensaje__error"></span>
+                </div>
+                <div class="input__content size">
+                    <input type="number" name="precio" class="input" placeholder="Precio" required data-tipo="precio" pattern="d{3,}*">
+                    <label class="input-label" for="precio">Precio del producto</label>
+                    <span class="mensaje__error"></span>
+                </div>
+                <div class="input__content size">
+                    <input type="text" name="descripcion" class="input" placeholder="Descripcion" required data-tipo="descripcion" minlength="4" maxlength="150">
+                    <label class="input-label" for="descripcion">Descripcion del producto</label>
+                    <span class="mensaje__error"></span>
+                </div>
+                
+                <button type="submit" class="btn-enviar addProducto">Agregar producto</button>
+            </form>
             
-            <button type="button" class="btn-enviar addProducto">Agregar producto</button>
         </section>
 
         <section class="contacto">

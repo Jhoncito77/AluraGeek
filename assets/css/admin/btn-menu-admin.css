@@ -28,6 +28,33 @@
     padding-top: 1rem;
 }
 
+.cargar_imagen{
+    position: absolute;
+    top: 0.5rem;
+    left: 90%;
+    width: 35px;
+    height: 35px;
+}
+
+.link_carga{
+    width: 35px;
+    height: 35px;
+    
+}
+
+.input_img{
+    display: none;
+}
+
+.icon__carga{
+    background: url("../../../imagenes/icon-carga.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
 @media screen and (min-width:768px) {
     .encabezado{
         justify-content: space-between;
@@ -40,6 +67,9 @@
     .contacto{
         justify-content: space-evenly;
         
+    }
+    .cargar_imagen{
+        left: 95%
     }
 }
 
@@ -71,6 +101,10 @@
     
     #nombre_mensaje{
         width: calc(100% - 2rem)
+    }
+
+    .cargar_imagen{
+        left: 90%
     }
 
     
