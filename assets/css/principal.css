@@ -1,11 +1,3 @@
-.img__producto {
-    background: url("../../imagenes/sw-1.png");
-    width: 100%;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
 .datos__producto {
     margin: 0 2rem;

@@ -107,4 +107,8 @@
     .linea__item {
         margin: 1rem;
     }
+
+    .linea__link:hover{
+        cursor: pointer
+    }
 }

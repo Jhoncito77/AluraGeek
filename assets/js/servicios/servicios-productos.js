@@ -25,5 +25,5 @@ const getProductos = ()=>{
 
 export const servicios = {
     crearProducto,
-    getProductos
+    getProductos,
 }

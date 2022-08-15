@@ -1,12 +1,52 @@
 {
   "Productos": [
     {
-      "id": 1,
-      "imagen": "url-img",
-      "categoria": "typicode",
-      "nombre": "nombre",
-      "precio": "123",
-      "descripcion": "descripcion de producto"
+      "id": "5877f964-8747-4641-abc0-1b863bfab55d",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_656628-MCO31538803701_072019-O.webp",
+      "categoria": "Star Wars",
+      "nombre": "Nave de guerra",
+      "precio": "70000",
+      "descripcion": "Nave de guerra de Star Wars edición limitada"
+    },
+    {
+      "id": "c070d6d6-7ee3-4e89-a052-c11f199924ea",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_977043-MCO45784700188_052021-O.webp",
+      "categoria": "Star Wars",
+      "nombre": "Figura de acción",
+      "precio": "30000",
+      "descripcion": "Figura de acción soldado Star Wars edición limitada"
+    },
+    {
+      "id": "344e9fa4-5441-4d3b-9e4e-b520f42be33d",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_780584-MCO42303591444_062020-O.webp",
+      "categoria": "Consolas",
+      "nombre": "Consola portatil",
+      "precio": "150000",
+      "descripcion": "Consola portatil 7 pulgadas mp5"
+    },
+    {
+      "id": "7ad124d0-a1bf-417d-aad8-05b7205926f6",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_803577-MCO45078392481_032021-O.webp",
+      "categoria": "Consolas",
+      "nombre": "Nintendo Swift",
+      "precio": "200000",
+      "descripcion": "Nintendo Swift serie x"
+    },
+    {
+      "id": "93ff541d-41d9-49bc-bd95-fb92c1993ca3",
+      "img": "https://m.media-amazon.com/images/I/712M9JlVXGL._AC_UX385_.jpg",
+      "categoria": "Diversos",
+      "nombre": "Pijama esqueleto",
+      "precio": "80000",
+      "descripcion": "Pijama enteriza de esqueleto"
+    },
+    {
+      "id": "93bb8302-a8db-425e-a271-b4105f21340e",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_695189-MCO44200606921_112020-O.webp",
+      "categoria": "Diversos",
+      "nombre": "Pijamas Otakus",
+      "precio": "90000",
+      "descripcion": "Pijamas Otakus (diferentes estilos)"
     }
   ]
 }
