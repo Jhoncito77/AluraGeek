@@ -5,7 +5,7 @@ export function validar(input) {
         validadores[tipoInput](input);
     }
 
-    console.log(input.validity)
+
     if (input.validity.valid) {
         input.parentElement.classList.remove("content__error");
         input.parentElement.querySelector(".mensaje__error").innerHTML = "";

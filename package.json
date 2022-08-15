@@ -1,0 +1,12 @@
+{
+  "name": "e-commerse",
+  "version": "1.0.0",
+  "description": "Proyecto OracleOne e-commerce",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jhon Moreno",
+  "license": "ISC",
+  "type": "module"
+}

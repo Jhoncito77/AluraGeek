@@ -1,0 +1,12 @@
+{
+  "Productos": [
+    {
+      "id": 1,
+      "imagen": "url-img",
+      "categoria": "typicode",
+      "nombre": "nombre",
+      "precio": "123",
+      "descripcion": "descripcion de producto"
+    }
+  ]
+}
