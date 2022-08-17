@@ -39,14 +39,6 @@
       "nombre": "Pijama esqueleto",
       "precio": "80000",
       "descripcion": "Pijama enteriza de esqueleto"
-    },
-    {
-      "id": "93bb8302-a8db-425e-a271-b4105f21340e",
-      "img": "https://http2.mlstatic.com/D_NQ_NP_695189-MCO44200606921_112020-O.webp",
-      "categoria": "Diversos",
-      "nombre": "Pijamas Otakus",
-      "precio": "90000",
-      "descripcion": "Pijamas Otakus (diferentes estilos)"
     }
   ]
 }

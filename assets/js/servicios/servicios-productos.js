@@ -21,9 +21,16 @@ const getProductos = ()=>{
     }).catch(error => console.log(error));
 }
 
+const deleteProducto = (id)=>{
+    return fetch(`http://localhost:3000/Productos/${id}`,{
+        method: "DELETE"
+    });
+}
+
 
 
 export const servicios = {
     crearProducto,
     getProductos,
+    deleteProducto
 }

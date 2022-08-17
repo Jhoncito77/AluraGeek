@@ -75,8 +75,29 @@
     margin-top: .5em;
 }
 
+.item__editar {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2a7ae4;
+    margin-top: .5em;
+}
+
+.item__eliminar {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: red;
+    margin-top: .5em;
+}
+
 .ocultar {
     display: none;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-around;
 }
 
 @media screen and (min-width:678px) {
@@ -108,7 +129,7 @@
         margin: 1rem;
     }
 
-    .linea__link:hover{
+    .linea__link:hover {
         cursor: pointer
     }
 }
