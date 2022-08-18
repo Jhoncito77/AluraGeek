@@ -23,33 +23,18 @@ buscador.addEventListener("keyup", (event) => {
 
 });
 
-// Funcion para opcion de ver todos los productos.
-const categorias = document.querySelectorAll(".linea__productos");
-
-if (categorias.length > 1) {
-    categorias.forEach((categoria) => {
-
-        let nombreCategoria = categoria.querySelector(".linea__titulo").innerHTML;
-        let lista = categoria.querySelector(".linea__lista");
-        let verTodo = categoria.querySelector(".link__text");
-        let ocultos = categoria.querySelectorAll(".ocultar");
-        verTodo.addEventListener("click", (event) => {
-            ocultos.forEach(dato => {
-                dato.style.display = "block";
-            })
-
-            listarProductosPorCategoria(productos, nombreCategoria, lista);
-        });
-    });
-}
-
-
-// productos.then(result => result.forEach(resp => console.log(resp.nombre)))
 
 const listarProductosPorCategoria = (productos, categoria, lista) => {
-    // console.log(productos, categoria, lista)
-
+    
+    let contador = 1;
+    let datosMax = 4;
+console.log(window.innerWidth)
+    if(window.innerWidth >= 1120){
+        datosMax = 6;
+    }
+  
     productos.then(respuesta => {
+        
         respuesta.forEach((producto) => {
             let dato = "";
             if (producto.categoria == categoria) {
@@ -60,15 +45,44 @@ const listarProductosPorCategoria = (productos, categoria, lista) => {
                     <p class="item__nombre">${producto.nombre}</p>
                     <p class="item__precio">R$ ${producto.precio}</p>
                     <a href="#" class="item__ver">Ver producto</a>`
-
-
+                
+                if(contador>datosMax){
+                    dato.classList.add("ocultar");
+                    
+                }
                 lista.appendChild(dato);
+                contador++;
             }
 
-
+            
         });
     }).catch(error => console.log(error))
 }
+// Funcion para opcion de ver todos los productos.
+const categorias = document.querySelectorAll(".linea__productos");
+
+if (categorias.length > 1) {
+    categorias.forEach((categoria) => {
+
+        let nombreCategoria = categoria.querySelector(".linea__titulo").innerHTML;
+        let lista = categoria.querySelector(".linea__lista");
+        let verTodo = categoria.querySelector(".link__text");
+        verTodo.addEventListener("click",()=>{
+            const items = categoria.querySelectorAll(".linea__item");
+            items.forEach(producto =>{
+                producto.classList.remove("ocultar");
+            })
+        })
+
+        listarProductosPorCategoria(productos, nombreCategoria, lista);
+    });
+}
+
+
+
+// productos.then(result => result.forEach(resp => console.log(resp.nombre)))
+
+
 
 export const listarProductos = (productos, lista) => {
 
@@ -89,10 +103,17 @@ export const listarProductos = (productos, lista) => {
 
             lista.appendChild(dato);
             const btnEliminar = dato.querySelector(".item__eliminar");
-            btnEliminar.addEventListener("click",()=>{
-                servicios.deleteProducto(producto.id).catch(error=>console.log(error))
+            btnEliminar.addEventListener("click", () => {
+                servicios.deleteProducto(producto.id).catch(error => console.log(error));
             })
 
+            const btnEditar = dato.querySelector(".item__editar");
+            btnEditar.addEventListener("click", () => {
+
+
+                window.location.href = `/../../../editarProducto.html?id=${producto.id}`;
+
+            })
 
         });
     }).catch(error => console.log(error))

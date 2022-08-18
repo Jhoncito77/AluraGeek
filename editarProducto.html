@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar producto || AluraGeek</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/body.css">
+    <link rel="stylesheet" href="./assets/css/header/encabezado.css">
+    <link rel="stylesheet" href="./assets/css/login/login.css">
+    <link rel="stylesheet" href="./assets/css/main/contacto.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    <link rel="stylesheet" href="./assets/css/admin/btn-menu-admin.css">
+    <link rel="stylesheet" href="./assets/css/input.css">
+</head>
+<body>
+    <header class="header">
+        <section class="encabezado">
+            <div class="logo__buscar">
+                <div class="logo"></div>
+                <div class="buscador">
+                    <div class="buscar">
+                        <input type="search" name="search" id="" placeholder="¿Que deseas buscar?" class="search">
+                        <div class="icon__buscar"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="admin.html"><button class="btn__login btn__admin">Menu Administrador</button></a>
+            <div class="icon__buscar tel"></div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="add__producto">
+            <p class="titulo__admin">Editar producto</p>
+            <form class="size" data-form>
+                <div class="input__content">
+                    <input type="text" name="urlImagen" class="input" placeholder="imagen" required data-tipo="imagen">
+                    
+                    <label class="input-label" for="urlImagen">Url de la imagen</label>
+                    <span class="mensaje__error"></span>
+                    
+                    <div class="cargar_imagen">
+                        <a class="link_carga">
+                            <div class="icon__carga"></div>
+                            
+                        </a>
+                        <input type="file" name="cargar_img" class="input_img" accept="image/*" data-cargarImagen>
+                    </div>
+                    
+                </div>
+                <div class="input__content">
+                    <input type="text" name="categoria" class="input" placeholder="Categoria" required data-tipo="categoria">
+                    <label class="input-label" for="categoria">Categoria</label>
+                    <span class="mensaje__error"></span>
+                </div>
+                <div class="input__content">
+                    <input type="text" name="nombre" class="input" placeholder="Nombre" required data-tipo="nombre"  minlength="4" maxlength="20">
+                    <label class="input-label" for="nombre">Nombre del producto</label>
+                    <span class="mensaje__error"></span>
+                </div>
+                <div class="input__content">
+                    <input type="number" name="precio" class="input" placeholder="Precio" required data-tipo="precio" pattern="d{3,}*">
+                    <label class="input-label" for="precio">Precio del producto</label>
+                    <span class="mensaje__error"></span>
+                </div>
+                <div class="input__content">
+                    <input type="text" name="descripcion" class="input" placeholder="Descripcion" required data-tipo="descripcion" minlength="4" maxlength="150">
+                    <label class="input-label" for="descripcion">Descripcion del producto</label>
+                    <span class="mensaje__error"></span>
+                </div>
+                
+                <button type="submit" class="btn-enviar addProducto">Editar producto</button>
+                <span class="mensaje__error" data-errorGuardar></span>
+            </form>
+            
+        </section>
+
+        <section class="contacto">
+            <div class="contacto__cont">
+                <div class="logo cont-logo"></div>
+                <div class="contacto__links">
+                    <a href="#" class="contacto__link">Quienes somos</a>
+                    <a href="#" class="contacto__link">Politica de privacidad</a>
+                    <a href="#" class="contacto__link">Programa de fidelidad</a>
+                    <a href="#" class="contacto__link">Nuestras tiendas</a>
+                    <a href="#" class="contacto__link">Quiero ser franquiciado</a>
+                    <a href="#" class="contacto__link">Anuncie aqui</a>
+                </div>
+            </div>
+            <div class="contacto__formulario">
+                <p class="contacto__formulario-titulo">Hable con nosotros</p>
+                <form action="">
+                    <div class="input__content">
+                        <input type="text" name="nombre_contacto" class="input" placeholder="Nombre" required maxlength="40" data-tipo="nombre">
+                        <label class="input-label" for="nombre_contacto">Nombre</label>
+                        <span class="mensaje__error"></span>
+                    </div>
+                    <div class="input__content">
+                        <textarea name="mensaje" cols="30" rows="10" class="input_textarea" placeholder="Mensaje" required maxlength="120" data-tipo="mensaje"></textarea>
+                        <label class="input-label" for="mensaje">Mensaje</label>
+                        <span class="mensaje__error"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar" id="sendMensaje">Enviar mensaje</button>
+                    
+                </form>
+                
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Jhon Jairo Moreno<br>2022 </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="./assets/js/app.js"></script>
+    
+    <script type="module" src="assets/js/controladores/editarProducto.js"></script>
+</body>
+</html>
