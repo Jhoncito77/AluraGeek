@@ -66,6 +66,10 @@
     margin: 1rem;
 }
 
+.img__producto{
+    margin: 2rem 3rem 1rem 3rem;
+}
+
 @media screen and (min-width:768px) {
     .producto {
         display: flex;
@@ -73,8 +77,16 @@
     }
 
     .datos__producto {
-        margin: 0;
+        margin-top: 3rem;
         padding: 0 1rem;
+    }
+
+    .otros_productos {
+        justify-content: flex-start;
+    }
+
+    .otro__producto{
+        margin-right: 1.5rem;
     }
 
     .titulo__producto {
@@ -134,5 +146,9 @@
 
     .ocultar{
         display: block;
+    }
+
+    .link__producto:hover{
+        cursor: pointer;
     }
 }

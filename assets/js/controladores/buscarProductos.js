@@ -44,7 +44,7 @@ console.log(window.innerWidth)
                 dato.innerHTML = `<img src="${producto.img}" class="img_new">
                     <p class="item__nombre">${producto.nombre}</p>
                     <p class="item__precio">R$ ${producto.precio}</p>
-                    <a href="#" class="item__ver">Ver producto</a>`
+                    <a class="item__ver">Ver producto</a>`
                 
                 if(contador>datosMax){
                     dato.classList.add("ocultar");
@@ -52,6 +52,10 @@ console.log(window.innerWidth)
                 }
                 lista.appendChild(dato);
                 contador++;
+
+                dato.querySelector(".item__ver").addEventListener("click",()=>{
+                    window.location.href = `./producto.html?id=${producto.id}`;
+                })
             }
 
             

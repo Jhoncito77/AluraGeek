@@ -132,4 +132,8 @@
     .linea__link:hover {
         cursor: pointer
     }
+
+    .item__ver:hover {
+        cursor: pointer;
+    }
 }
